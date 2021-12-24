@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue:hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Paleblue: hsl(225, 100%, 94%);
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    height: 1131px;
+    background-image:url(images/pattern-background-desktop.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo2{ 
+    border-radius: 1.5em 1.5em 0 0;
+    
+}
+.container{
+    background-color: var(--Verypaleblue);
+    border-radius: 1.5em;
+    width: min-content;
+    height:58% ;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.music{
+    background:url(images/icon-music.svg);
+    width: 48px;
+    height: 48px;
+}
+button{
+    color:var(--Verypaleblue);
+    background-color: var(--Brightblue);
+    border-radius: 1em;
+    border: none;
+    margin-top :15.5px; 
+    height: 3em;
+    width:22.6em;
+}
+button:active,button:hover{
+    cursor: pointer;
+}
+
+.sec{
+    background-color: var(--Verypaleblue);
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    padding: 2em 0 2em 0;
+}
+.cancel{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 1em;
+}
+.cancel:hover{
+    cursor: pointer;
+}
+p{
+    margin: 0;
+    padding: 0 0 12px 0;
+}
+h1{
+    color: var(--Darkblue);
+    padding: 24px 0 0 0;
+}
+strong{
+    color: var(--Darkblue);
+}
+p,span,.cancel{
+    color:var(--Desaturatedblue);
+
+}
+a{
+    padding-left:44px;
+    padding-right: 0%;
+    padding-top: .7rem;
+}
+a:active{
+    color:var(--Desaturatedblue);
+}
+@media screen and (max-width:375px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    
+}
